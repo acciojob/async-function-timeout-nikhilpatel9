@@ -10,7 +10,7 @@ const handleSubmit = async function() {
     const delayPromise = new Promise((resolve) => {
         setTimeout(() => {
             resolve(textValue);
-        }, delayValue*1000); 
+        }, delayValue); 
     });
 
     const data = await delayPromise;
